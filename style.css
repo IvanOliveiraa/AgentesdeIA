@@ -200,8 +200,6 @@ body p {
   }
 }
 
-/* estilização containers*/
-
 .section.visible {
   opacity: 1;
   transform: translateY(0);
@@ -221,7 +219,7 @@ body p {
   font-weight: 800;
   margin-bottom: 80px;
   text-align: center;
-  background: linear-gradient(90deg, #b1d6f8, #b1d6f8);
+  background: linear-gradient(90deg, #b1d6f8, #73c0f8);
   text-shadow: 0 0px 40px rgba(35, 183, 246, 0.67);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -238,7 +236,6 @@ body p {
   font-weight: 300;
 }
 
-/* Estilo da lista de definição */
 .definition-list {
   list-style: none;
   text-align: left;
@@ -267,11 +264,10 @@ body p {
 }
 
 .definition-list li strong {
-  color: #90e0ef;
+  color: #b1d6f8;
   font-weight: 600;
 }
 
-/* Cards Grid */
 .cards-grid {
   display: flex;
   gap: 40px;
@@ -294,7 +290,7 @@ body p {
   transition: all 0.4s ease;
   position: relative;
   overflow: hidden;
-  opacity: 0; /* Para Scroll Reveal */
+  opacity: 0;
   transform: translateY(30px);
 }
 .card.visible {
@@ -330,11 +326,24 @@ body p {
   margin-bottom: 25px;
   filter: drop-shadow(0 0 10px rgba(0, 180, 216, 0.5));
 }
+.card-image {
+  width: calc(100% + 60px);
+  margin: -30px -30px 25px -30px;
+  border-radius: 16px 16px 0px 0px;
+  display: block;
+  object-fit: cover;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
 
+.card-image:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 20px rgba(0,  0,  0,  0.4);
+}
 .card h3 {
   font-size: 1.8rem;
   margin-bottom: 15px;
-  color: #90e0ef;
+  color: #b1d6f8;
   font-weight: 700;
 }
 
@@ -344,7 +353,6 @@ body p {
   font-size: 1.1rem;
 }
 
-/* Interactive Demo */
 .demo-container {
   background: rgba(0, 29, 61, 0.3);
   border: 2px solid rgba(0, 119, 182, 0.3);
@@ -401,12 +409,12 @@ body p {
 
 .impact-box.positive {
   border-color: #06ffa5;
-  background: rgba(6, 255, 165, 0.05);
+  background: rgba(6, 255, 164, 0.1);
   transform: translateX(-50px);
 }
 .impact-box.negative {
   border-color: #ff006e;
-  background: rgba(255, 0, 110, 0.05);
+  background: rgba(255, 0, 110, 0.1);
   transform: translateX(50px);
 }
 
